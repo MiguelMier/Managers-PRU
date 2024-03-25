@@ -1,9 +1,12 @@
 package org.example.cafetera.model;
 
-public class Cafetera {
+import org.example.cafetera.model.extension.CafeFunc;
+
+public abstract class Cafetera implements CafeFunc {
 
     private boolean tieneCafe;
     private int numCafesDisponibles;
+    private int mlCafe;
 
     public Cafetera(){
         this.tieneCafe = false;
@@ -11,24 +14,34 @@ public class Cafetera {
     }
 
     public void rellenarCafe(){
-        this.tieneCafe = true;
-        this.numCafesDisponibles = 10;
-    }
-
-    public void seAcaboElCafe(){
-        this.tieneCafe = false;
-    }
-
-    public void hacerCafe(){
-        if(numCafesDisponibles > 1){
-            calentarCafetera();
-            this.numCafesDisponibles--;}
-        else
-            rellenarCafe();
+        setNumCafesDisponibles(10);
     }
 
     public void calentarCafetera(){
         System.out.println("Calentando cafetera...");
     }
 
+    public boolean isTieneCafe() {
+        return tieneCafe;
+    }
+
+    public void setTieneCafe(boolean tieneCafe) {
+        this.tieneCafe = tieneCafe;
+    }
+
+    public int getNumCafesDisponibles() {
+        return numCafesDisponibles;
+    }
+
+    public void setNumCafesDisponibles(int numCafesDisponibles) {
+        this.numCafesDisponibles = numCafesDisponibles;
+    }
+
+    public int getMlCafe() {
+        return mlCafe;
+    }
+
+    public void setMlCafe(int mlCafe) {
+        this.mlCafe = mlCafe;
+    }
 }

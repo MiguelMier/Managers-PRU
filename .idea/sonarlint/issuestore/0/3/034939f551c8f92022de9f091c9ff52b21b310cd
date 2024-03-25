@@ -1,4 +1,4 @@
 
-r	java:S106"+Replace this use of System.out by a logger.(õËë¤ÿÿÿÿÿ8¶¼®«ç1J$d4dae0f8-df71-442e-b32e-948ee9dd7bcb
-u
-java:S1068"-Remove this unused "tieneCafe" private field.(îòÕùıÿÿÿÿ8·¼®«ç1J$c6c1c292-0dad-4a32-b79f-174bacf63e81
+|
+java:S5993"9Change the visibility of this constructor to "protected".(®á§…8¸´ä«ç1J$3da24941-2706-4930-bbd7-f3a351e84120
+r	java:S106"+Replace this use of System.out by a logger.(õËë¤ÿÿÿÿÿ8À´ä«ç1J$bf20f51d-4eac-4cfe-aa9c-b3a8f9eda86b

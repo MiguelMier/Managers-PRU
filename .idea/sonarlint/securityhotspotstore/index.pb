@@ -53,3 +53,11 @@ f
 6src/main/java/org/example/libreria/funcion/FakeBD.java,1\b\1bacc7ae9be4ea027da5fe799a20d2598e9df752
 f
 6src/main/java/org/example/cafetera/model/Cafetera.java,0\3\034939f551c8f92022de9f091c9ff52b21b310cd
+y
+Isrc/main/java/org/example/cafetera/model/extension/CafeteraRistretto.java,5\6\56713c6005af3d72598ce799f96e6b96cad05e2e
+x
+Hsrc/main/java/org/example/cafetera/model/extension/CafeteraExpresso.java,c\a\ca9cd68314877d41d30e8f8f462b2c65876739be
+y
+Isrc/main/java/org/example/cafetera/model/extension/CafeteraMolinillo.java,9\8\9859da63b39e763ba7e4ecc617bb896e9a0db879
+p
+@src/main/java/org/example/cafetera/model/extension/CafeFunc.java,4\e\4e3d13cd027940d952d9ed1db518581ae1837c25
