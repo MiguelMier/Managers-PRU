@@ -1,0 +1,7 @@
+
+L	java:S106"+Replace this use of System.out by a logger.(¦è§†üÿÿÿÿ8®ÜŠ©ç1
+L	java:S106"+Replace this use of System.out by a logger.(–ûÅ¼ýÿÿÿÿ8¯ÜŠ©ç1
+C
+java:S1128"&Remove this unused import 'java.util'.(Î€ŒÙ8³ÜŠ©ç1
+l
+java:S1128"ORemove this unused import 'javax.swing.plaf.basic.BasicInternalFrameTitlePane'.(‹£¬¥8³ÜŠ©ç1
