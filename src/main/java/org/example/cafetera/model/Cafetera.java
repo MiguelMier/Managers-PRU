@@ -1,47 +1,17 @@
 package org.example.cafetera.model;
 
 import org.example.cafetera.model.extension.CafeFunc;
+import org.example.cafetera.model.extension.liskov.Cafe;
 
-public abstract class Cafetera implements CafeFunc {
+public abstract class Cafetera  {
 
-    private boolean tieneCafe;
-    private int numCafesDisponibles;
-    private int mlCafe;
+    protected double capacidadTotal; // en mililitros
+    protected double nivelAgua; // en mililitros
 
-    public Cafetera(){
-        this.tieneCafe = false;
-        this.numCafesDisponibles = 0;
+    public Cafetera(double capacidadTotal, double nivelAgua) {
+        this.capacidadTotal = capacidadTotal;
+        this.nivelAgua = nivelAgua;
     }
 
-    public void rellenarCafe(){
-        setNumCafesDisponibles(10);
-    }
-
-    public void calentarCafetera(){
-        System.out.println("Calentando cafetera...");
-    }
-
-    public boolean isTieneCafe() {
-        return tieneCafe;
-    }
-
-    public void setTieneCafe(boolean tieneCafe) {
-        this.tieneCafe = tieneCafe;
-    }
-
-    public int getNumCafesDisponibles() {
-        return numCafesDisponibles;
-    }
-
-    public void setNumCafesDisponibles(int numCafesDisponibles) {
-        this.numCafesDisponibles = numCafesDisponibles;
-    }
-
-    public int getMlCafe() {
-        return mlCafe;
-    }
-
-    public void setMlCafe(int mlCafe) {
-        this.mlCafe = mlCafe;
-    }
+    public abstract Cafe preparar();
 }
