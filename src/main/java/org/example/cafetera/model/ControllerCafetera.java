@@ -27,27 +27,24 @@ public class ControllerCafetera {
     }
 
     public void run() {
-        Cafetera cafetera;
         Scanner scanner = new Scanner(System.in);
-        cafetera = new CafeteraExpresso(1000, 500);
 
-        // Interacción con el usuario
         int opcion;
         do {
             mostrarMenu();
             opcion = scanner.nextInt();
             switch (opcion) {
                 case 1:
-                    prepararYMostrarCafe(cafetera, new CafeteraExpresso(1000, 500));
+                    prepararYMostrarCafe(new CafeteraExpresso(1000, 500));
                     break;
                 case 2:
-                    prepararYMostrarCafe(cafetera, new CafeteraMolinillo(1500, 700));
+                    prepararYMostrarCafe(new CafeteraMolinillo(1500, 700));
                     break;
                 case 3:
-                    prepararYMostrarCafe(cafetera, new CafeteraRistretto(1200, 800));
+                    prepararYMostrarCafe(new CafeteraRistretto(1200, 800));
                     break;
                 case 4:
-                    prepararYMostrarCafe(cafetera, new CafeteraFiltro(2000, 1500));
+                    prepararYMostrarCafe(new CafeteraFiltro(2000, 1500));
                     break;
                 case 5:
                     System.out.println("Saliendo...");
@@ -72,19 +69,11 @@ public class ControllerCafetera {
     }
 
 
-    public void prepararYMostrarCafe(Cafetera cafetera) {
-        Cafe cafe = cafetera.preparar();
-        if (cafe != null) {
-            System.out.println("Se ha preparado un " + cafe.getTipo());
-            System.out.println("Cantidad de café restante en la cafetera: " + cafetera.nivelAgua + " ml");
-        }
-    }
-
-    public void prepararYMostrarCafe(Cafetera cafetera, Cafetera nuevaCafetera) {
+    public void prepararYMostrarCafe(Cafetera nuevaCafetera) {
         Cafe cafe = nuevaCafetera.preparar();
         if (cafe != null) {
             System.out.println("Se ha preparado un " + cafe.getTipo());
-            System.out.println("Cantidad de café restante en la cafetera: " + cafetera.nivelAgua + "ml");
+            System.out.println("Cantidad de café restante en la cafetera: " + nuevaCafetera.getNivelAgua() + "ml");
         }
     }
 }

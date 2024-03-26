@@ -15,7 +15,7 @@ public class CafeteraExpresso extends Cafetera {
     public Cafe preparar() {
         System.out.println("Preparando espresso...");
         if (nivelAgua >= CONSUMO_AGUA_ESPRESSO) {
-            nivelAgua -= CONSUMO_AGUA_ESPRESSO;
+            setNivelAgua(nivelAgua - CONSUMO_AGUA_ESPRESSO);
             return new Cafe("Espresso", CONSUMO_AGUA_ESPRESSO);
         } else {
             System.out.println("No hay suficiente agua en la cafetera para preparar espresso.");

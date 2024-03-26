@@ -15,7 +15,7 @@ public class CafeteraRistretto extends Cafetera {
     public Cafe preparar() {
         System.out.println("Preparando ristretto...");
         if (nivelAgua >= CONSUMO_AGUA_RISTRETTO) {
-            nivelAgua -= CONSUMO_AGUA_RISTRETTO;
+            setNivelAgua(nivelAgua - CONSUMO_AGUA_RISTRETTO);
             return new Cafe("Ristretto", CONSUMO_AGUA_RISTRETTO);
         } else {
             System.out.println("No hay suficiente agua en la cafetera para preparar ristretto.");

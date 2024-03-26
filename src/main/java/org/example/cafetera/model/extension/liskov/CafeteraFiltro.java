@@ -13,7 +13,7 @@ public class CafeteraFiltro extends Cafetera {
     public Cafe preparar() {
         System.out.println("Preparando café con filtro...");
         if (nivelAgua >= CONSUMO_AGUA_FILTRO) {
-            nivelAgua -= CONSUMO_AGUA_FILTRO;
+            setNivelAgua(nivelAgua - CONSUMO_AGUA_FILTRO);
             return new Cafe("Café con filtro", CONSUMO_AGUA_FILTRO);
         } else {
             System.out.println("No hay suficiente agua en la cafetera para preparar café con filtro.");

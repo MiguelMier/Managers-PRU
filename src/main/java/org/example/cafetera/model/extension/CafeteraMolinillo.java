@@ -15,7 +15,7 @@ public class CafeteraMolinillo extends Cafetera {
     public Cafe preparar() {
         System.out.println("Preparando café con molinillo...");
         if (nivelAgua >= CONSUMO_AGUA_MOLINILLO) {
-            nivelAgua -= CONSUMO_AGUA_MOLINILLO;
+            setNivelAgua(nivelAgua - CONSUMO_AGUA_MOLINILLO);
             return new Cafe("Café con molinillo", CONSUMO_AGUA_MOLINILLO);
         } else {
             System.out.println("No hay suficiente agua en la cafetera para preparar café con molinillo.");
