@@ -4,7 +4,7 @@ import org.example.cafetera.model.Cafetera;
 import org.example.cafetera.model.extension.inversion.Molienda;
 
 public class CafeteraFiltro extends Cafetera {
-    private static final double CONSUMO_AGUA_FILTRO = 100; // en mililitros
+    private static final double CONSUMO_AGUA_FILTRO = 100;
 
     public CafeteraFiltro(double capacidadTotal, double nivelAgua, Molienda molienda) {
         super(capacidadTotal, nivelAgua, molienda);
